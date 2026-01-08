@@ -59,7 +59,7 @@ const home = () => {
         </Row>
       </Container>
     </section>  
-    {/* ========== hero section start ========== */}
+    {/* ========== hero section end========== */}
     <section>
       <Container>
         <Row>
@@ -71,6 +71,10 @@ const home = () => {
           </Row>
         </Container>
     </section>
+   
+
+
+
       {/* ========== featured tour section start ========== */}
     <section>
       <Container>
@@ -84,6 +88,8 @@ const home = () => {
       </Container>
     </section>
       {/* ========== featured tour section end ========== */}  
+
+
       {/* ========== experience section start ========== */}
       <section>
         <Container>
@@ -126,6 +132,8 @@ const home = () => {
         </Container>
       </section>
       {/* ========== experience section end ========== */}
+
+
       {/* ========== gallery section start ========== */}
        <section>
         <Container>
