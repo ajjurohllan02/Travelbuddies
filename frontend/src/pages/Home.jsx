@@ -16,6 +16,10 @@ import MasonryImagesGallery from "../components/Image-gallery/MasonryImagesGalle
 import Testimonials from "../components/Testimonial/Testimonials";
 import Newsletter from "../shared/Newsletter";
 
+const handleChange=()=>{
+  alert("Submitted");
+}
+
 const home = () => {
   return (<>
    {/* ========== hero section start ========== */}
@@ -139,6 +143,9 @@ const home = () => {
         </Container>
        </section>
       {/* ========== gallery section end ========== */}
+      
+      
+
       {/* ========== testimonial section start ========== */}
       <section>
         <Container>
@@ -153,7 +160,42 @@ const home = () => {
           </Row>
         </Container>
       </section>
+
       {/* ========== testimonial section end ========== */}
+
+
+
+      
+      {/* ========== review section start ========== */}
+      <section>
+      <Container>
+        <Row>
+          <Col lg='12'>
+            <Subtitle subtitle={'Review'}/>
+            <h2 className="review_title">Leave your experience about us</h2>
+          </Col>
+          <Col lg='12'>
+          </Col>
+        </Row>
+
+        <form action="submit_review" method="POST">
+          <Row>
+        <label className="form_label" htmlFor="name">Your Name:</label>
+        <input type="text" id="name" name="name" required />
+        </Row>
+        <Row>
+        
+        <label className="form_label" htmlFor="review">Your Review:</label>
+        <textarea id="review" name="review" required></textarea>
+
+        <button type="submit" onClick={handleChange}>Submit Review</button>
+        </Row>
+    
+      </form>
+      
+      </Container>
+      </section>
+      {/* ========== review section end ========== */}
        <Newsletter/>
 
   
